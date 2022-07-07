@@ -1,5 +1,10 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  gap:5em;
 }
 
 .App-logo {
@@ -15,12 +20,12 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  width:100%;
   color: white;
 }
 
@@ -35,4 +40,44 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Starship-Card-Container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  text-decoration: none;
+}
+
+.Starship-Card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(73, 95, 167);
+  margin: 2rem;
+  padding: 2rem;
+  color: white;
+  overflow-wrap: break-word;
+  height: 100px;
+  width:200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Detail-Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(73, 95, 167);
+  margin: 2rem;
+  padding: 2rem;
+  color: white;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
 }
